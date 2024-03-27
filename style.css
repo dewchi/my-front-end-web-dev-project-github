@@ -1,0 +1,117 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+    background-color: lavender;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+
+
+.logo {
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    padding: 5px;
+    display: inline;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav {
+    text-decoration: none;
+}
+
+.main-nav p {
+    padding-right: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.side-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.side-nav img {
+    width: 50px;
+    height: 50px;
+}
+
+.main-section {
+    display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url('pictures/wines.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.inset-div {
+    background-color: lightgray;
+    opacity: 0.8;
+    margin: 25px 25px 0 0;
+    padding: 25px;
+    width: 380px;
+    height: 300px;
+    padding: 2%;
+}
+
+.button {
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.three-wide {
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+}
+
+.first {
+    border-right: 1px solid lightgrey;
+    margin: 10px;
+    padding: 20px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+  }
