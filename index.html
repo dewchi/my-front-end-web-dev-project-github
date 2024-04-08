@@ -5,34 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monate Wines</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <img class="logo" src="pictures/monate_logo.jpeg">
+     <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Home</a>
+        <div class="others">
+        <a href="#">Shop</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Login</a>
+        <a href="#">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <header class="header">
-        <img class="logo" src="pictures/monate_logo.jpeg">
         <div class="nav-container">
             <nav class="main-nav">
-                <div>
                     <ul class="nav">
-                        <li>
-                            <a href="#">Home</a>
+                        <li class="navbar">
+                            <a href="#">Wines</a>
+                            <ul>
+                                <li><a href="#">All Wines</a></li>
+                                <li><a href="#">Whiskey</a></li>
+                                <li><a href="#">Spirits</a></li>
+                            </ul>
+
                         </li>
                         <li>
-                            <a href="#">Shop</a>
+                            <a href="#">Best Sellers</a>
+                            <ul>
+                                <li><a href="#">Featured Wines</a></li>
+                                <li><a href="#">Shop by Occassion</a></li>
+                                <li><a href="#">Shop by Producer</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#">Join</a>
+                            <a href="#">Gift Ideas</a>
+                            <ul>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="#">Free Tastings</a>
                         </li>
                     </ul>
-                </div>
             </nav>
         </div>
         <nav class="side-nav">
             <img class="shopping-cart" src="pictures/shopping-cart.jpeg">
-            <br>
-            <input id="searchBar" class="hidden" placeholder="Search">
         </nav>
     </header>
     <section class="main-section">
@@ -46,12 +71,53 @@
             <a href="#" class="button">Place Your First Order</a>
         </div>
     </section>
-    <section>
-        <img src="dew_monate/pictures/wine_glass.jpg">
-        <h2 class="card-title">Wine 1</h2>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Add to Cart</a>            
-    </section>
+    <div class="nav-right">
+        <p class="workspaces">Your Basket</p>
+        <div class="hamburger-menu" id="menu-trigger">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg" alt="Hamburger icon">
+        </div>
+      </div>
+      <section class="container">
+          <h2 class="bestsellers">Featured Wines</h2>
+          <h3 class="bestsellers-sub">Explore Monate Wines Best Sellers. Which one is right for you? </h3>
+          <section class="three-container">
+              <div class="upper-section">
+                  <h4 class="wine-name">Vescovo Pinot Grigio</h4>
+                  <img class="wine-image" src="pictures/Vescovo-Pinot-Grigio.jpeg">
+                  <p class="wine-description">This revolutionised Provence rosé – with Whispering Angel as the figurehead.</p>
+                  <p class="wine-price">£11.99 per bottle</p>
+                  <p class="wine-alcohol-level">ABV 13.50%</p>
+                  <button class="add-to-cart" id="button">Add to cart</button>
+              </div>
+              <div class="upper-section">
+                  <h4 class="wine-name">California II Wine</h4>
+                  <img class="wine-image" src="pictures/wine.jpeg">
+                  <p class="wine-description">This iconic wine has a wealth of awards behind it, and it's clear to see why</p>
+                  <p class="wine-price">£14.99 per bottle</p>
+                  <p class="wine-alcohol-level">ABV 17.50%</p>
+                  <button class="add-to-cart">Add to cart</button>
+              </div>
+              <div class="upper-section">
+                  <h4 class="wine-name">La Trombetta</h4>
+                  <img class="wine-image" src="pictures/La-Trombetta.jpeg">
+                  <p class="wine-description">This wine has fresh notes of apple, pink grapefruit, peach and cream, and a long, smooth finish. </p>
+                  <p class="wine-price">£12.99 per bottle</p>
+                  <p class="wine-alcohol-level">ABV 13%</p>
+                  <button class="add-to-cart">Add to cart</button>
+              </div>
+              <div class="upper-section">
+                <h4 class="wine-name">Vescovo Pinot Grigio</h4>
+                <img class="wine-image" src="pictures/Vescovo-Pinot-Grigio.jpeg">
+                <p class="wine-description">This revolutionised Provence rosé – with Whispering Angel as the figurehead.</p>
+                <p class="wine-price">£11.99 per bottle</p>
+                <p class="wine-alcohol-level">ABV 13.50%</p>
+                <button class="add-to-cart" id="button">Add to cart</button>
+            </div>
+          </section>
+          <div class="button">
+              <button class="button-text">Find more like this</button>
+          </div>
+      </section>
     <section class="three-wide">
         <div class="first">
             <h3>Monate Event Wines</h3>

@@ -18,3 +18,13 @@ if (age >= 18) {
 
   document.getElementById('searchBar').addEventListener('click', showSearchBar)
   document.getElementById('searchBar').addEventListener('click', hideSearchBar)
+
+  
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
